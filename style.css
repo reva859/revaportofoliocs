@@ -1,0 +1,218 @@
+* {
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    color: #161823;
+    background-color: #ffffff;
+}
+
+.header {
+    padding: 24px;
+}
+
+.main-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.login-box {
+    width: 100%;
+    max-width: 400px;
+}
+
+h1 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 8px;
+    letter-spacing: -0.5px;
+}
+
+.subtitle {
+    font-size: 15px;
+    color: #161823;
+    margin-bottom: 32px;
+}
+
+.subtitle a {
+    color: #2b5aed;
+    text-decoration: none;
+}
+
+.subtitle a:hover {
+    text-decoration: underline;
+}
+
+.form-group {
+    margin-bottom: 16px;
+}
+
+.label-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.label-row a {
+    color: #2b5aed;
+    text-decoration: none;
+    font-weight: 400;
+}
+
+.label-row a:hover {
+    text-decoration: underline;
+}
+
+.input-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    background-color: rgba(22, 24, 35, 0.06);
+    border: 1px solid transparent;
+    border-radius: 4px;
+    padding: 14px 16px;
+    font-size: 15px;
+    outline: none;
+    transition: all 0.2s ease-in-out;
+    color: #161823;
+}
+
+input[type="password"] {
+    padding-right: 48px;
+}
+
+input::placeholder {
+    color: rgba(22, 24, 35, 0.34);
+}
+
+input:focus {
+    border-color: rgba(22, 24, 35, 0.2);
+    background-color: #ffffff;
+}
+
+.eye-icon {
+    position: absolute;
+    right: 16px;
+    color: rgba(22, 24, 35, 0.34);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.btn-primary {
+    width: 100%;
+    background-color: #fe2c55;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    padding: 14px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 8px;
+    transition: background-color 0.2s;
+}
+
+.btn-primary:hover {
+    background-color: #ef2a50;
+}
+
+.divider {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 24px 0;
+    color: rgba(22, 24, 35, 0.5);
+    font-size: 14px;
+}
+
+.divider::before,
+.divider::after {
+    content: '';
+    flex: 1;
+    border-bottom: 1px solid rgba(22, 24, 35, 0.12);
+}
+
+.divider::before {
+    margin-right: 12px;
+}
+
+.divider::after {
+    margin-left: 12px;
+}
+
+.btn-secondary {
+    width: 100%;
+    background-color: #161823;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    padding: 14px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    transition: background-color 0.2s;
+}
+
+.btn-secondary:hover {
+    background-color: #2b2d36;
+}
+
+.problems-link {
+    display: block;
+    margin-top: 24px;
+    color: #2b5aed;
+    text-decoration: none;
+    font-size: 14px;
+    text-align: left;
+}
+
+.problems-link:hover {
+    text-decoration: underline;
+}
+
+/* Cyber Security Warning Banner Styling */
+.cyber-warning-container {
+    background-color: #ffebee;
+    color: #c62828;
+    padding: 16px 24px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    border-top: 4px solid #c62828;
+    margin-top: auto;
+    position: relative;
+    z-index: 10;
+    box-shadow: 0 -4px 12px rgba(0,0,0,0.05);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+.cyber-warning-container svg {
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+}
